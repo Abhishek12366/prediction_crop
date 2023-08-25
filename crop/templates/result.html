@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Recommended Crop</h1>
+    {% if result %}
+        <p>The recommended crop is: {{ result }}</p>
+    {% else %}
+        <p>No recommendation available.</p>
+    {% endif %}
+    <a href="{% url 'index' %}">Go back to input</a>
+</body>
+</html>
